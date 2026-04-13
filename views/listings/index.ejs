@@ -1,8 +1,5 @@
 <% layout("layouts/boilerplate")%>
-     <!-- <h3>All Listings</h3> -->
-     <!-- <form action="/listings/new" method="GET">
-        <button type="submit">Create New Listing</button>
-    </form> -->
+
      <div id="filters">
           <div class="filter">
                <div><i class="fa-solid fa-fire"></i></div>
@@ -31,7 +28,7 @@
           <div class="filter">
                <div><i class="fa-solid fa-campground"></i></div>
                <p>Camping</p>
-          </div>
+          </div> 
           <div class="filter">
                <div><i class="fa-solid fa-cow"></i></div>
                <p>Farms</p>
@@ -55,7 +52,7 @@
           <div class="filter">
                <div><i class="fa-solid fa-ship"></i></div>
                <p>Boats</p>
-          </div>
+          </div> 
           <div class="toggle">
                <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
@@ -83,16 +80,8 @@
                          </div>
                     </div>
                </a>
-          <% } %>
+               <% } %>
      </div>
-
-     <!-- <ul>
-    <% for(let listing of allListings) { %>
-    <li><a href="/listings/<%= listing.id %>">
-        <%= listing.title %>
-    </a></li>
-    <% } %>
-</ul> -->
 
      <script>
           let taxSwitch = document.getElementById("switchCheckDefault");
